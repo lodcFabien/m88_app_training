@@ -61,6 +61,9 @@ namespace UnityEngine.UI.Extensions
         private UnityEvent _onBeginDragEvent = new UnityEvent();
         public UnityEvent OnBeginDragEvent => _onBeginDragEvent;
 
+        private UnityEvent _onEndDragEvent = new UnityEvent();
+        public UnityEvent OnEndDragEvent => _onEndDragEvent;
+
 
         #region IBeginDragHandler Members
         public void OnBeginDrag(PointerEventData eventData)
@@ -121,6 +124,8 @@ namespace UnityEngine.UI.Extensions
             _fakeElement = new GameObject("Fake").AddComponent<RectTransform>();
             _fakeElementLE = _fakeElement.gameObject.AddComponent<LayoutElement>();
 
+            Image fakeElementImage = _fakeElement.gameObject.AddComponent<Image>();
+            fakeElementImage.color = new Color(1, 1, 1, .5f);
             RefreshSizes();
 
             //Send OnElementGrabbed Event
@@ -357,7 +362,6 @@ namespace UnityEngine.UI.Extensions
         public void OnEndDrag(PointerEventData eventData)
         {
             _isDragging = false;
-
             if (_draggingObject != null)
             {
                 //If we have a ReorderableList that is dropable
@@ -465,6 +469,7 @@ namespace UnityEngine.UI.Extensions
                 _fakeElement = null;
             }
             _canvasGroup.blocksRaycasts = true;
+            _onEndDragEvent.Invoke();
         }
         #endregion
 
