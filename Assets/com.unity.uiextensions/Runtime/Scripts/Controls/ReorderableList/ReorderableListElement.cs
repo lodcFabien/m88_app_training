@@ -4,6 +4,7 @@
 
 using System;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 namespace UnityEngine.UI.Extensions
@@ -57,6 +58,9 @@ namespace UnityEngine.UI.Extensions
         private CanvasGroup _canvasGroup;
         internal bool isValid;
 
+        private UnityEvent _onBeginDragEvent = new UnityEvent();
+        public UnityEvent OnBeginDragEvent => _onBeginDragEvent;
+
 
         #region IBeginDragHandler Members
         public void OnBeginDrag(PointerEventData eventData)
@@ -106,7 +110,8 @@ namespace UnityEngine.UI.Extensions
             }
 
             //Put _dragging object into the dragging area
-            _draggingObjectOriginalSize = gameObject.GetComponent<RectTransform>().rect.size;
+            //_draggingObjectOriginalSize = gameObject.GetComponent<RectTransform>().rect.size;
+            _draggingObjectOriginalSize = new Vector2(gameObject.GetComponent<RectTransform>().rect.size.x,80);
             _draggingObjectLE = _draggingObject.GetComponent<LayoutElement>();
             _draggingObject.SetParent(_reorderableList.DraggableArea, true);
             _draggingObject.SetAsLastSibling();
@@ -138,6 +143,8 @@ namespace UnityEngine.UI.Extensions
             }
 
             _isDragging = true;
+
+            _onBeginDragEvent.Invoke();
         }
         #endregion
 
