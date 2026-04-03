@@ -10,9 +10,4 @@ public class FolderSpawner : MonoBehaviour
         _folderPrefab = folderPrefab;
     }
 
-    public void SpawnFolder()
-    {
-        FolderItemController folder = Instantiate(_folderPrefab, _container);
-        folder.Init(_folderPrefab);
-    }
 }

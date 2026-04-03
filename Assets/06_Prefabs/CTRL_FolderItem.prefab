@@ -303,7 +303,8 @@ MonoBehaviour:
   _childrenContainer: {fileID: 8982655826381690823}
   _listElement: {fileID: 8762462311040693535}
   _vbMain: {fileID: 8268519389449800450}
-  _spawner: {fileID: 7015603429921332993}
+  _subFolderContainer: {fileID: 83659046979300761}
+  _nameInputField: {fileID: 6497738385208915062}
 --- !u!114 &8268519389449800450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,7 +343,6 @@ GameObject:
   - component: {fileID: 1838660300168966059}
   - component: {fileID: 1192659998441030609}
   - component: {fileID: 2307893959160658063}
-  - component: {fileID: 7015603429921332993}
   - component: {fileID: 473212387233108192}
   m_Layer: 5
   m_Name: BTN_Spawn
@@ -452,9 +452,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7015603429921332993}
-        m_TargetAssemblyTypeName: FolderSpawner, Assembly-CSharp
-        m_MethodName: SpawnFolder
+      - m_Target: {fileID: 3323434596407934673}
+        m_TargetAssemblyTypeName: FolderItemController, Assembly-CSharp
+        m_MethodName: AddSubFolderOnButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -464,32 +464,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3323434596407934673}
-        m_TargetAssemblyTypeName: FolderItemController, Assembly-CSharp
-        m_MethodName: SetCollapsed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &7015603429921332993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4754644652589464389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be251013e9a24404eacda18f32e962ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FolderSpawner
-  _folderPrefab: {fileID: 0}
-  _container: {fileID: 83659046979300761}
 --- !u!114 &473212387233108192
 MonoBehaviour:
   m_ObjectHideFlags: 0

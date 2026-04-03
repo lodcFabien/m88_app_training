@@ -126,6 +126,7 @@ namespace UnityEngine.UI.Extensions
 
             Image fakeElementImage = _fakeElement.gameObject.AddComponent<Image>();
             fakeElementImage.color = new Color(1, 1, 1, .5f);
+
             RefreshSizes();
 
             //Send OnElementGrabbed Event
