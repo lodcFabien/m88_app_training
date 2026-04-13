@@ -38,7 +38,13 @@ public class CourseListController : MonoBehaviour
         newCourse.ClickEvent.AddListener(ActionOnCourseClicked);
         newCourse.DuplicateEvent.AddListener(ActionOnCourseDuplicated);
         newCourse.DeleteEvent.AddListener(ActionOnCourseDeleted);
+        newCourse.NameEdiedtEvent.AddListener(ActionOnCourseNameEdited);
         newCourse.ActionOnClick();
+    }
+
+    private void ActionOnCourseNameEdited()
+    {
+        _courseCreationController.Save();
     }
 
     private void ActionOnCourseClicked(CourseItemController clickedCourse)

@@ -22,6 +22,7 @@ public class CourseCreationController : MonoBehaviour
     public void AddNewFolderOnButtonClick()
     {
         AddNewFolder(_folderContainer).ClickOnItem();
+        Save();
     }
 
     public FolderItemController AddNewFolder(Transform container)
@@ -40,7 +41,7 @@ public class CourseCreationController : MonoBehaviour
 
     public void SetCurrentCourse(CourseItemController course)
     {
-        _view.SetVisible(course != null);
+        _view.Init(course);
         _fileManagementController.SetActiveFolder(null);
 
         if (course == null)
@@ -60,14 +61,19 @@ public class CourseCreationController : MonoBehaviour
 
     public void Save()
     {
-        FolderSavedModel[] folders = new FolderSavedModel[_folderContainer.childCount];
+        Debug.Log("saved");
+
+        List<FolderSavedModel> folders = new List<FolderSavedModel>();
 
         for (int i = 0; i < _folderContainer.childCount; i++)
         {
-            folders[i] = _folderContainer.GetChild(i).GetComponent<FolderItemController>().MakeSavedModel();
+            if(_folderContainer.GetChild(i).GetComponent<FolderItemController>() != null)
+            {
+                folders.Add(_folderContainer.GetChild(i).GetComponent<FolderItemController>().MakeSavedModel());
+            }
         }
 
-        _currentCourse.Save(folders);
+        _currentCourse.Save(folders.ToArray());
     }
 
 

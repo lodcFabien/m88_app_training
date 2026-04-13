@@ -1,12 +1,16 @@
+using TMPro;
 using UnityEngine;
 
 public class CourseCreationView : MonoBehaviour
 {
     [SerializeField] private CanvasGroup _canvasGroup;
+    [SerializeField] private TMP_Text _title;
 
-    public void SetVisible(bool enabled)
+    public void Init(CourseItemController course)
     {
-        _canvasGroup.alpha = enabled ? 1 :0;
-        _canvasGroup.blocksRaycasts = enabled;
+        _canvasGroup.alpha = course != null ? 1 :0;
+        _canvasGroup.blocksRaycasts = course != null;
+        _title.text = course?.CourseModel.CourseTitle;
     }
+
 }

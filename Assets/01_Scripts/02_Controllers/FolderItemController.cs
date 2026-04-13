@@ -30,6 +30,7 @@ public class FolderItemController : MonoBehaviour
     private UnityEvent<FolderItemController> _clickEvent = new UnityEvent<FolderItemController>();
     public UnityEvent<FolderItemController> ClickEvent => _clickEvent;
 
+    public string Title => _view.GetName();
 
     public void Init(CourseCreationController courseMaker)
     {
@@ -70,6 +71,7 @@ public class FolderItemController : MonoBehaviour
     public void AddSubFolderOnButtonClick()
     {
         AddSubFolder();
+        Save();
     }
 
     public FolderItemController AddSubFolder()
@@ -82,12 +84,15 @@ public class FolderItemController : MonoBehaviour
     public FolderSavedModel MakeSavedModel()
     {
         FolderSavedModel savedModel = new FolderSavedModel();
-        FolderSavedModel[] subFolders = new FolderSavedModel[_subFolderContainer.childCount];
         string[] files = new string[_files.Count];
+        List<FolderSavedModel> subFolders = new List<FolderSavedModel>();
 
-        for(int i=0 ; i< _subFolderContainer.childCount; i++)
+        for (int i = 0; i < _subFolderContainer.childCount; i++)
         {
-            subFolders[i] = _subFolderContainer.GetChild(i).GetComponent<FolderItemController>().MakeSavedModel();
+            if (_subFolderContainer.GetChild(i).GetComponent<FolderItemController>() != null)
+            {
+                subFolders.Add(_subFolderContainer.GetChild(i).GetComponent<FolderItemController>().MakeSavedModel());
+            }
         }
 
         for (int i = 0; i < _files.Count; i++)
@@ -96,7 +101,7 @@ public class FolderItemController : MonoBehaviour
         }
 
         savedModel.FolderName = _view.GetName();
-        savedModel.SubFolders = subFolders;
+        savedModel.SubFolders = subFolders.ToArray();
         savedModel.Files = files;
         return savedModel;
     }
@@ -143,5 +148,11 @@ public class FolderItemController : MonoBehaviour
     public void SetFiles(List<string> files)
     {
         _files = files;
+        Save();
+    }
+
+    public void Save()
+    {
+        _courseMaker.Save();
     }
 }

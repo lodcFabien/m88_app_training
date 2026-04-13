@@ -15,6 +15,9 @@ public class CourseItemController : MonoBehaviour
     private UnityEvent<CourseItemController> _deleteEvent = new UnityEvent<CourseItemController>();
     public UnityEvent<CourseItemController> DeleteEvent => _deleteEvent;
 
+    private UnityEvent _nameEditedEvent = new UnityEvent();
+    public UnityEvent NameEdiedtEvent => _nameEditedEvent;
+
     private CourseSavedModel _courseModel;
     public CourseSavedModel CourseModel => _courseModel;
 
@@ -52,5 +55,10 @@ public class CourseItemController : MonoBehaviour
     public void Delete()
     {
         DeleteEvent.Invoke(this);
+    }
+
+    public void SetNameEdited()
+    {
+        NameEdiedtEvent.Invoke();
     }
 }

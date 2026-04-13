@@ -1,13 +1,17 @@
+using TMPro;
 using UnityEngine;
 
 public class FileManagementView : MonoBehaviour
 {
+    [SerializeField] private TMP_Text _title;
     [SerializeField] private CanvasGroup _canvasGroup;
 
-    public void SetVisible(bool enabled)
+    public void Init(FolderItemController folder)
     {
-        _canvasGroup.alpha = enabled ? 1 :0;
-        SetActive(enabled);
+        _canvasGroup.alpha = folder != null ? 1 :0;
+        SetActive(folder != null);
+        _title.text = folder?.Title;
+
     }
 
     public void SetActive(bool active)

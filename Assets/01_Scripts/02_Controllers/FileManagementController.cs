@@ -15,7 +15,7 @@ public class FileManagementController : MonoBehaviour
 
     public void SetActiveFolder(FolderItemController currentFolder)
     {
-        _view.SetVisible(currentFolder != null);
+        _view.Init(currentFolder);
 
         if(currentFolder == null)
         {
