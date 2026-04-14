@@ -16,7 +16,7 @@ public class CourseDatabaseManager : Singleton<CourseDatabaseManager>
     private bool _loaded = false;
     public bool Loaded => _loaded;
 
-    private void Awake()
+    private void Start()
     {
         LoadAllCourses();
     }

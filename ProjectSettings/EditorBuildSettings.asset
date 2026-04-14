@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/00_Levels/L_Test_List.unity
+    path: Assets/00_Levels/L_00_MainMenu.unity
+    guid: 0ed53dd8322957546a16ff3f71f4beba
+  - enabled: 1
+    path: Assets/00_Levels/L_01_CourseCreation.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/00_Levels/L_02_CourseVisualization.unity
+    guid: 9ca0f82421e5853489eca172f995d199
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

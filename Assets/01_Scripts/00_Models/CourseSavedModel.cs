@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using static Enums;
 
 [Serializable]
 public class CourseSavedModel : ICloneable
@@ -7,12 +8,14 @@ public class CourseSavedModel : ICloneable
     public int Id;
     public string CourseTitle;
     public FolderSavedModel[] Folders;
+    public TrainingCategory[] Categories;
 
     public CourseSavedModel(string courseTitle = "")
     {
         CourseTitle = courseTitle;
         Folders = new FolderSavedModel[0];
-        Id = 0;
+        Id = 0; 
+        Categories = new TrainingCategory[0];
     }
 
     [Serializable]
@@ -25,7 +28,7 @@ public class CourseSavedModel : ICloneable
         public FolderSavedModel()
         {
             SubFolders = new FolderSavedModel[0];
-            Files = new string[0];  
+            Files = new string[0];
         }
     }
 
