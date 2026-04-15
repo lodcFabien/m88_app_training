@@ -34,7 +34,7 @@ public class QuizListController_Creation : MonoBehaviour
     {
         _quizButtons.Remove(deletedQuiz);
         Destroy(deletedQuiz.gameObject);
-        QuizDatabaseManager.Instance.DeleteCourse(deletedQuiz.Model);
+        QuizDatabaseManager.Instance.DeleteQuiz(deletedQuiz.Model);
         ActionOnQuizSelected(null);
     }
 

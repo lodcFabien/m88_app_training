@@ -31,6 +31,7 @@ public class QuizButtonController_Creation : MonoBehaviour
 
     public void UpdateTitle()
     {
+        QuizDatabaseManager.Instance.DeleteQuiz(Model);
         _model.QuizTitle = _view.GetTitle();
         Save();
     }

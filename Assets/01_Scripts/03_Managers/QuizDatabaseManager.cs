@@ -48,8 +48,8 @@ public class QuizDatabaseManager : Singleton<QuizDatabaseManager>
         _loaded = true;
     }
 
-    public void DeleteCourse(QuizSavedModel quiz)
+    public void DeleteQuiz(QuizSavedModel quiz)
     {
-        File.Delete($"{_quizSaveDirectory}{quiz.Id}.quizz");
+        File.Delete($"{_quizSaveDirectory}{quiz.Id}_{quiz.QuizTitle}.quiz");
     }
 }
