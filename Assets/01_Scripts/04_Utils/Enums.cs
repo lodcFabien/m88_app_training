@@ -20,6 +20,7 @@ public class Enums
     {
         Video,
         Pdf,
-        PowerPoint
+        PowerPoint,
+        Quiz
     }
 }
