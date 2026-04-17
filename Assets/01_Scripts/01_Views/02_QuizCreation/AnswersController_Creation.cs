@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.WSA;
 using static QuizSavedModel;
 
 public class AnswersController_Creation : MonoBehaviour
@@ -27,9 +28,15 @@ public class AnswersController_Creation : MonoBehaviour
 
     private void ActionOnAnswerDestroyed(AnswerItemController_Creation answer)
     {
-        _answers.Remove(answer);
-        Destroy(answer.gameObject);
-        AnswersEdited.Invoke();
+        ConfirmPopupController.Instance.Activate("Do you want to delete this answer", popupAnswer =>
+        {
+            if (popupAnswer)
+            {
+                _answers.Remove(answer);
+                Destroy(answer.gameObject);
+                AnswersEdited.Invoke();
+            }
+        });
     }
 
     public void SetAnswersOnLoad(QuestionSavedModel model)

@@ -48,10 +48,17 @@ public class CourseListController_Creation : MonoBehaviour
 
     private void ActionOnCourseDeleted(CourseItemController_Creation clickedCourse)
     {
-        CourseDatabaseManager.Instance.DeleteCourse(clickedCourse.CourseModel);
-        _coursesList.Remove(clickedCourse);
-        Destroy(clickedCourse.gameObject);
-        ActionOnCourseClicked(null);
+        ConfirmPopupController.Instance.Activate("Do you want to delete this course", answer =>
+        {
+            if (answer)
+            {
+                CourseDatabaseManager.Instance.DeleteCourse(clickedCourse.CourseModel);
+                _coursesList.Remove(clickedCourse);
+                Destroy(clickedCourse.gameObject);
+                ActionOnCourseClicked(null);
+            }
+        });
+
     }
 
     private void ActionOnCourseDuplicated(CourseItemController_Creation clickedCourse)

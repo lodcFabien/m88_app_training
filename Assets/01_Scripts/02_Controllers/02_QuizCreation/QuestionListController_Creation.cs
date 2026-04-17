@@ -87,10 +87,17 @@ public class QuestionListController_Creation : MonoBehaviour
 
     private void ActionOnQuestionDestroyed(QuestionItemController_Creation questionItem)
     {
-        _questions.Remove(questionItem);
-        DestroyImmediate(questionItem.gameObject);
-        ActionOnQuestionsEdited();
-        ActionOnQuestionClicked(null);
+        ConfirmPopupController.Instance.Activate("Do you want to delete this question", popupAnswer =>
+        {
+            if (popupAnswer)
+            {
+                _questions.Remove(questionItem);
+                DestroyImmediate(questionItem.gameObject);
+                ActionOnQuestionsEdited();
+                ActionOnQuestionClicked(null);
+            }
+        });
+
     }
 
 

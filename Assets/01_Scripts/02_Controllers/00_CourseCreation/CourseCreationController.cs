@@ -121,7 +121,13 @@ public class CourseCreationController : MonoBehaviour
 
     public void DestroyFolder(GameObject folder)
     {
-        DestroyImmediate(folder);
-        Save();
+        ConfirmPopupController.Instance.Activate("Do you want to delete this folder", answer =>
+        {
+            if (answer)
+            {
+                DestroyImmediate(folder);
+                Save();
+            }
+        });
     }
 }

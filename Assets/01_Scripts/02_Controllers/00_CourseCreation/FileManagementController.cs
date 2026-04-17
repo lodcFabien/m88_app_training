@@ -42,8 +42,14 @@ public class FileManagementController : MonoBehaviour
 
     private void ActionOnFileDelete(FileItemController_Creation fileItem)
     {
-        DestroyImmediate(fileItem.gameObject);
-        SetActiveFolderFileList();
+        ConfirmPopupController.Instance.Activate("Do you want to delete this file", answer =>
+        {
+            if (answer)
+            {
+                DestroyImmediate(fileItem.gameObject);
+                SetActiveFolderFileList();
+            }
+        });
     }
 
     private void ActionOnFileItemEndDrag()

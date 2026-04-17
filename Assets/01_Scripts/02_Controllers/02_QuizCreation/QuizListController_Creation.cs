@@ -32,10 +32,16 @@ public class QuizListController_Creation : MonoBehaviour
 
     private void ActionOnQuizDestroyed(QuizButtonController_Creation deletedQuiz)
     {
-        _quizButtons.Remove(deletedQuiz);
-        Destroy(deletedQuiz.gameObject);
-        QuizDatabaseManager.Instance.DeleteQuiz(deletedQuiz.Model);
-        ActionOnQuizSelected(null);
+        ConfirmPopupController.Instance.Activate("Do you want to delete this quiz", popupAnswer =>
+        {
+            if (popupAnswer)
+            {
+                _quizButtons.Remove(deletedQuiz);
+                Destroy(deletedQuiz.gameObject);
+                QuizDatabaseManager.Instance.DeleteQuiz(deletedQuiz.Model);
+                ActionOnQuizSelected(null);
+            }
+        });
     }
 
     private void ActionOnQuizSelected(QuizButtonController_Creation quizButton)
