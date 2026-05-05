@@ -38,7 +38,7 @@ public class QuizButtonController_Creation : MonoBehaviour
 
     public void Destroy()
     {
-        _destroyEvent.Invoke(this);
+        DestroyEvent.Invoke(this);
     }
 
     public void Click()
