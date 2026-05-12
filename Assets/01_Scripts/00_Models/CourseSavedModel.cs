@@ -8,14 +8,14 @@ public class CourseSavedModel : ICloneable
     public int Id;
     public string CourseTitle;
     public FolderSavedModel[] Folders;
-    public TrainingCategory[] Categories;
+    public CourseType CourseType;
 
     public CourseSavedModel(string courseTitle = "")
     {
         CourseTitle = courseTitle;
         Folders = new FolderSavedModel[0];
-        Id = 0; 
-        Categories = new TrainingCategory[0];
+        Id = 0;
+        CourseType = CourseType.Course;
     }
 
     [Serializable]

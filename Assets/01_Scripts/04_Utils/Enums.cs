@@ -2,11 +2,10 @@ using UnityEngine;
 
 public class Enums
 {
-    public enum TrainingCategory
+    public enum CourseType
     {
-        Trainee,
-        Instructor,
-        Safran
+        Course,
+        Library
     }
 
     public enum VisualizationPageState

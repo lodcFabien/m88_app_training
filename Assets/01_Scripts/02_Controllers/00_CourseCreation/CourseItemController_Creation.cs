@@ -41,11 +41,11 @@ public class CourseItemController_Creation : MonoBehaviour
         _view.SetSelected(selected);
     }
 
-    public void Save(FolderSavedModel[] folders, TrainingCategory[] categories)
+    public void Save(FolderSavedModel[] folders, CourseType type)
     {
         if (CourseDatabaseManager.Instance)
         {
-            _courseModel.Categories = categories;
+            _courseModel.CourseType = type;
             _courseModel.Folders = folders;
             _courseModel.CourseTitle = _view.GetTitle();
             CourseDatabaseManager.Instance.SaveCourse(_courseModel);

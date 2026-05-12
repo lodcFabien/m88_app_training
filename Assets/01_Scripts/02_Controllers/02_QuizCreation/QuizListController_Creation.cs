@@ -6,6 +6,7 @@ using UnityEngine;
 public class QuizListController_Creation : MonoBehaviour
 {
     [SerializeField] private Transform _quizItemContainer;
+    [SerializeField] private ExcelImportController _excelImportController;
     [SerializeField] private QuizButtonController_Creation _quizButtonPrefab;
     [SerializeField] private QuestionListController_Creation _questionList;
 
@@ -54,8 +55,19 @@ public class QuizListController_Creation : MonoBehaviour
     public void AddQuizzOnClick()
     {
         QuizSavedModel model = new QuizSavedModel();
-        model.Id = GetNewId();
-        AddQuizButton(model).Click();
+        AddQuizToList(model);
+    }
+
+    public void ImportQuiz()
+    {
+        QuizSavedModel model = _excelImportController.OpenExel();
+        AddQuizToList(model);
+    }
+
+    public void AddQuizToList(QuizSavedModel quizModel)
+    {
+        quizModel.Id = GetNewId();
+        AddQuizButton(quizModel).Click();
     }
 
     private void ActionOnDatabaseLoaded()

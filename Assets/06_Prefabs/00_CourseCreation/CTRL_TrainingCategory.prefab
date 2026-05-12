@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9158462649644526067}
-  - component: {fileID: 4190570375834267532}
+  - component: {fileID: 1465045406763753802}
   - component: {fileID: 4054262547952921884}
   - component: {fileID: 8411308634334324275}
   m_Layer: 5
@@ -116,7 +116,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 141.8, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4190570375834267532
+--- !u!114 &1465045406763753802
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,11 +125,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1369027137772879800}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d16baa304e263114f82a1aa6615a26d1, type: 3}
+  m_Script: {fileID: 11500000, guid: 934602d3c29e36949b604071266ec1cf, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TrainingCategoryController
+  m_EditorClassIdentifier: Assembly-CSharp::CourseTypeController
   _view: {fileID: 4054262547952921884}
-  _category: 0
+  _type: 0
 --- !u!114 &4054262547952921884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,9 +290,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4190570375834267532}
-        m_TargetAssemblyTypeName: TrainingCategoryController, Assembly-CSharp
-        m_MethodName: SwitchSelected
+      - m_Target: {fileID: 1465045406763753802}
+        m_TargetAssemblyTypeName: CourseTypeController, Assembly-CSharp
+        m_MethodName: Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 6315226282013685429}
   - component: {fileID: 7131168426645582188}
   m_Layer: 5
-  m_Name: TXT_Category
+  m_Name: TXT_Type
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TRAINEE
+  m_text: COURSE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

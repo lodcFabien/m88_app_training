@@ -12,7 +12,7 @@ public class CourseCreationController : MonoBehaviour
     [SerializeField] private Transform _folderContainer;
     [SerializeField] private CourseCreationView _view;
     [SerializeField] private FileManagementController _fileManagementController;
-    [SerializeField] private List<TrainingCategoryController> _trainingCategories = new List<TrainingCategoryController>();
+    [SerializeField] private CourseTypesController _courseTypes;
 
     [SerializeField] private RectTransform _draggableArea;
     public RectTransform DraggableArea => _draggableArea;
@@ -24,7 +24,7 @@ public class CourseCreationController : MonoBehaviour
 
     private void Awake()
     {
-        _trainingCategories.ForEach(x => x.ValueChanged.AddListener(Save));
+        _courseTypes.NewTypeSelected.AddListener(Save);
     }
 
     public void AddNewFolderOnButtonClick()
@@ -65,10 +65,8 @@ public class CourseCreationController : MonoBehaviour
             AddNewFolder(_folderContainer).MakeItemFromSave(course.CourseModel.Folders[i]);
         }
 
-        foreach (TrainingCategoryController categoryController in _trainingCategories)
-        {
-            categoryController.SetSelected(course.CourseModel.Categories.ToList<TrainingCategory>().Contains(categoryController.Category));
-        }
+        _courseTypes.SetSelectedTypeOnLoad(course.CourseModel.CourseType);
+
     }
 
     public void Save()
@@ -86,17 +84,10 @@ public class CourseCreationController : MonoBehaviour
             }
         }
 
-        // Set category
-        List<TrainingCategory> categories = new List<TrainingCategory>();
-        foreach (TrainingCategoryController categoryController in _trainingCategories)
-        {
-            if (categoryController.Selected)
-            {
-                categories.Add(categoryController.Category);
-            }
-        }
+        // Set Course type
+        CourseType type = _courseTypes.SelectedType;
 
-        _currentCourse.Save(folders.ToArray(), categories.ToArray());
+        _currentCourse.Save(folders.ToArray(), type);
     }
 
 
