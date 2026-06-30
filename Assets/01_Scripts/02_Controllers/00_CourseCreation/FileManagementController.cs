@@ -65,7 +65,7 @@ public class FileManagementController : MonoBehaviour
         }
     }
 
-    public void AddNewFile()
+    public void AddNewFile(List<string> files)
     {
         ExtensionFilter[] extensions = new[] {
             new ExtensionFilter("Files", "pdf", "mp4", "ppsx", "quiz" )

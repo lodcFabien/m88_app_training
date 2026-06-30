@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class QuizDatabaseManager : Singleton<QuizDatabaseManager>
 {
-    private string _quizSaveDirectory = $"{Application.streamingAssetsPath}/Quizzes/";
+    private string _quizSaveDirectory = $"{Application.streamingAssetsPath}/Quizzes/01_Medias/03_Quizzes";
 
     private List<QuizSavedModel> _quizzes= new List<QuizSavedModel>();
     public List<QuizSavedModel> Quizzes => _quizzes;

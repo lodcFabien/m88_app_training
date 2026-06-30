@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class CourseDatabaseManager : Singleton<CourseDatabaseManager>
 {
-    private string _courseSaveDirectory = $"{Application.streamingAssetsPath}/Courses/";
+    private string _courseSaveDirectory = $"{Application.streamingAssetsPath}/00_Courses/";
 
     private List<CourseSavedModel> _courses = new List<CourseSavedModel>();
     public List<CourseSavedModel> Courses => _courses;
