@@ -14,8 +14,8 @@ public class FileController_Visualization : MonoBehaviour
 
     public void Init(string filePath)
     {
-        _filePath = filePath;
-        FileInfo fileInfo = new FileInfo(filePath);
+        _filePath = Application.streamingAssetsPath + filePath;
+        FileInfo fileInfo = new FileInfo(_filePath);
         _view.SetName($"{fileInfo.Name}");
     }
 

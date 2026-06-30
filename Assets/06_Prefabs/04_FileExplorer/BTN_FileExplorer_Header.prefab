@@ -194,7 +194,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3680451122988362823}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8927653843016167074}
+        m_TargetAssemblyTypeName: FileExplorer_CategoryButtonController, Assembly-CSharp
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6452696633877198522
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,6 +398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FileExplorerButtonController
   _view: {fileID: 8557946373926147668}
+  _fileType: 0
 --- !u!114 &8557946373926147668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,7 +411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f051973f70285424591827e16cb77650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FileExplorer_CategoryButtonView
-  _selectImage: {fileID: 7720542049376866500}
+  _selectImage: {fileID: 196017095237997079}
 --- !u!1 &8450194245436277518
 GameObject:
   m_ObjectHideFlags: 0

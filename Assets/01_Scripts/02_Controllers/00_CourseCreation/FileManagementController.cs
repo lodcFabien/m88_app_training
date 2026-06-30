@@ -11,6 +11,8 @@ public class FileManagementController : MonoBehaviour
     [SerializeField] private FileItemController_Creation _fileItemPrefab;
     [SerializeField] private Transform _fileItemContainer;
 
+    private List<FileItemController_Creation> _fileItems = new List<FileItemController_Creation>(); 
+
     private FolderItemController_Creation _activeFolder;
 
     public void SetActiveFolder(FolderItemController_Creation currentFolder)
@@ -34,10 +36,16 @@ public class FileManagementController : MonoBehaviour
 
     public void SpawnFileItem(string fileName)
     {
+        if(_fileItems.Find(x => x.FileName == fileName))
+        {
+            return;
+        }
+
         FileItemController_Creation fileItem = Instantiate(_fileItemPrefab, _fileItemContainer);
         fileItem.Init(fileName);
         fileItem.EndDragEvent.AddListener(ActionOnFileItemEndDrag);
         fileItem.DeleteEvent.AddListener(ActionOnFileDelete);
+        _fileItems.Add(fileItem);
     }
 
     private void ActionOnFileDelete(FileItemController_Creation fileItem)
@@ -67,18 +75,11 @@ public class FileManagementController : MonoBehaviour
 
     public void AddNewFile(List<string> files)
     {
-        ExtensionFilter[] extensions = new[] {
-            new ExtensionFilter("Files", "pdf", "mp4", "ppsx", "quiz" )
-        };
-
-        string[] newFile = StandaloneFileBrowser.OpenFilePanel("Open File", "", extensions, false);
-
-        if(newFile.Length <= 0)
+        foreach (string file in files)
         {
-            return;
+            SpawnFileItem(file);
         }
 
-        SpawnFileItem(newFile[0]);
         SetActiveFolderFileList();
     }
 

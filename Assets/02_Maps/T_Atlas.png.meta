@@ -113,23 +113,661 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: T_Frame
+      name: T_VisualizationIcon
       rect:
         serializedVersion: 2
-        x: 90
-        y: 3513
-        width: 530
-        height: 529
+        x: 68
+        y: 1762
+        width: 221
+        height: 221
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 32, y: 31, z: 31, w: 31}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a25456ac74928b230800000000000000
-      internalID: 3654716485926208810
+      spriteID: 1878920b41e6c114399a5ea37797cc63
+      internalID: 1673398825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_EditCoursesIcon
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1862
+        width: 241
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4fecad43b5dff41a22bc3c848ca834
+      internalID: 813390706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_QuizMakerIcon
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1857
+        width: 140
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022a11ed49558d942a9f818ae32a9315
+      internalID: -28545424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_ReduceIcon
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 1864
+        width: 62
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6538e34ce6518d499ef9c1c79c4c03f
+      internalID: 1280502306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_MaximizeIcon
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1863
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee34a9c57ad142140aa14fa7143bdba0
+      internalID: -1524369160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_QuitIcon
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1863
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330f3221038330442bcebebfb22ec5e9
+      internalID: -642722658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Presentation_Item
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 1852
+        width: 77
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3163a801bef181f4b830f11e380ff99d
+      internalID: -726876872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_PDF_Item
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 1852
+        width: 77
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4440ccc8d79670a4caf810bed73793a5
+      internalID: -354090120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Quiz_Item
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 1852
+        width: 77
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c106c730eb02940901695834c7158a
+      internalID: 1399659327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AddIcon
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1629
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ec4af940fdc584ebff4bbf44224896
+      internalID: -1204317760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DeleteIcon
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1628
+        width: 55
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a84f97a570bfc54a86e96c6c5a0bfa3
+      internalID: 1635836301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DuplicateIcon
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1629
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9803e6c5eae4efa4fa2f902e467d3189
+      internalID: 1062015508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_QuizTimeline_Circle
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1629
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48f1ff2445914b488e13cc2a9347073
+      internalID: -711581462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_QuizTimeline_Disk
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 1643
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f6485903af850458cae658e01dae30
+      internalID: 587157103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_VerticalLine
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1597
+        width: 5
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 5, z: 0, w: 4}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547945eaf9bb66f4c947470a74c77e9e
+      internalID: 1357597845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Expand
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 1630
+        width: 32
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac364c80b1b97d4fbded47c4b03e1ed
+      internalID: -2041235876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_VideoIcon
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad161150babf53d4f8fc45d1c1c429ca
+      internalID: -2012900994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_PresentationIcon
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1146e7c923f35b3489ba97419fcd4a22
+      internalID: 1026459398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_PdfIcon
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0692393e64f0ab3499d65a1da7bef2b3
+      internalID: -944246159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_QuizIcon
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 1628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae908b594897b642858a1b143245816
+      internalID: 352060945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Play
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 1630
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df157b2af6894b4448f7031d98bc3fad
+      internalID: 1970215803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Volume
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 1628
+        width: 77
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c02d4016399e64fa35fdb715c21215
+      internalID: -703654096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Circle
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1629
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f94f39caa548040a73c92ebac8fe4b
+      internalID: 654047580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_HorizontalLine
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 1655
+        width: 140
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 0, z: 6, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b0681739168f9488f799766df70d52
+      internalID: 1944546183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Cartouche
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1445
+        width: 242
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 38, y: 0, z: 38, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f26470fc5699147853cd02f0b98939
+      internalID: -1443981765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_RoundedSquare
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 854
+        width: 515
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef6be8774041c54987ca6a27f6215e6
+      internalID: 648953176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_RoundedFrame
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 849
+        width: 524
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce9aa41dec64b14683689b32c72611e
+      internalID: -883072294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Logo
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 668
+        width: 424
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102629534e0bfaa4f9efa2eabecc43be
+      internalID: 767785257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Safran
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 579
+        width: 156
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6541c2536ba861c4c80f46d1f8ac20bf
+      internalID: -1533311493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_VideoItem
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 1852
+        width: 77
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643ab2abb0fbf6a499557967e34f41ee
+      internalID: -58690106
       vertices: []
       indices: 
       edges: []
@@ -148,7 +786,37 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      T_AddIcon: -1204317760
+      T_Cartouche: -1443981765
+      T_Circle: 654047580
+      T_DeleteIcon: 1635836301
+      T_DuplicateIcon: 1062015508
+      T_EditCoursesIcon: 813390706
+      T_Expand: -2041235876
       T_Frame: 3654716485926208810
+      T_HorizontalLine: 1944546183
+      T_Logo: 767785257
+      T_MaximizeIcon: -1524369160
+      T_PDF_Item: -354090120
+      T_PdfIcon: -944246159
+      T_Play: 1970215803
+      T_PresentationIcon: 1026459398
+      T_Presentation_Item: -726876872
+      T_QuitIcon: -642722658
+      T_QuizIcon: 352060945
+      T_QuizMakerIcon: -28545424
+      T_QuizTimeline_Circle: -711581462
+      T_QuizTimeline_Disk: 587157103
+      T_Quiz_Item: 1399659327
+      T_ReduceIcon: 1280502306
+      T_RoundedFrame: -883072294
+      T_RoundedSquare: 648953176
+      T_Safran: -1533311493
+      T_VerticalLine: 1357597845
+      T_VideoIcon: -2012900994
+      T_VideoItem: -58690106
+      T_VisualizationIcon: 1673398825
+      T_Volume: -703654096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

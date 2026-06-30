@@ -883,7 +883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.28057432, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1116,7 +1116,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1155960557}
   m_HandleRect: {fileID: 1155960556}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1194,7 +1194,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0010754534}
+  m_AnchoredPosition: {x: 0, y: 0.000056103458}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &435439940
@@ -2707,7 +2707,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 807028857}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1734276562}
+        m_TargetAssemblyTypeName: FileExplorer_MainController, Assembly-CSharp
+        m_MethodName: Import
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &807028857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2783,7 +2795,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0010506794}
+  m_AnchoredPosition: {x: 0, y: 0.00013326445}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &867694552
@@ -4440,6 +4452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BTN_Quizz
       objectReference: {fileID: 0}
+    - target: {fileID: 8927653843016167074, guid: 6ed9484ca53e9524cb48d8b95c5d86e5, type: 3}
+      propertyPath: _fileType
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5391,6 +5407,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BTN_PDF
       objectReference: {fileID: 0}
+    - target: {fileID: 8927653843016167074, guid: 6ed9484ca53e9524cb48d8b95c5d86e5, type: 3}
+      propertyPath: _fileType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6279,13 +6299,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FileExplorerController
   _activator: {fileID: 1596991371}
+  _fileManagement: {fileID: 792630153}
   _headerButtons:
   - {fileID: 5367617875652766439}
   - {fileID: 1507029107}
   - {fileID: 1757306528}
   - {fileID: 1319760451}
   _containers:
-  - {fileID: 0}
+  - {fileID: 1877578567}
   - {fileID: 1902531217}
   - {fileID: 1840135579}
   - {fileID: 1303409735}
@@ -7149,6 +7170,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8718511555866763041, guid: 65694e0d522dbcf45b7e59dd803fb44e, type: 3}
   m_PrefabInstance: {fileID: 1877578564}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1877578567 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8762421108168876648, guid: 65694e0d522dbcf45b7e59dd803fb44e, type: 3}
+  m_PrefabInstance: {fileID: 1877578564}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaa1b4c7a8d09c43847e47fb02d4623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FileExplorer_ItemContainerController
 --- !u!1 &1884674605
 GameObject:
   m_ObjectHideFlags: 0
@@ -8131,6 +8163,10 @@ PrefabInstance:
     - target: {fileID: 7720542049376866500, guid: 6ed9484ca53e9524cb48d8b95c5d86e5, type: 3}
       propertyPath: m_Name
       value: BTN_Presentations
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927653843016167074, guid: 6ed9484ca53e9524cb48d8b95c5d86e5, type: 3}
+      propertyPath: _fileType
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

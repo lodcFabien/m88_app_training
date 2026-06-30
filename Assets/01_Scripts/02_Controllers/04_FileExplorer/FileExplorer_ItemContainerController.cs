@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using SkiaSharp;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -40,11 +41,13 @@ public class FileExplorer_ItemContainerController : MonoBehaviour
             if (file.Extension == GetExtension())
             {
                 FileExplorer_FileItemController spawnedItem = Instantiate(_fileItemPrefab, _fileItemContainer);
-                spawnedItem.Init(file.Name);
-                _fileItems.Add(spawnedItem);    
+                spawnedItem.Init(file);
+                _fileItems.Add(spawnedItem);
+                spawnedItem.ClickEvent.AddListener(x => x.SwitchSelected());
             }
         }
     }
+
 
     public string GetFilesPath()
     {
@@ -78,5 +81,20 @@ public class FileExplorer_ItemContainerController : MonoBehaviour
     public void Reset()
     {
         _fileItems.ForEach(x => x.SetSelected(false));
+    }
+
+    public List<string> GetFileToImport()
+    {
+        List<string> files = new List<string>();
+
+        foreach(FileExplorer_FileItemController fileItem in _fileItems)
+        {
+            if (fileItem.Selected)
+            {
+                files.Add(fileItem.GetSavedPath());
+            }
+        }
+
+        return files;
     }
 }
