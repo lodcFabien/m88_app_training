@@ -7,10 +7,12 @@ public class CourseItemView_Creation : MonoBehaviour
 {
     [SerializeField] private Image _backgroundImage;
     [SerializeField] private TMP_InputField _inputField;
+    [SerializeField] private Color _normalColor;
+    [SerializeField] private Color _selectColor;
 
     public void SetSelected(bool selected)
     {
-        _backgroundImage.color = selected ? Color.red : Color.white;
+        _backgroundImage.color = selected ? _selectColor : _normalColor;
     }
 
     public void SetTitle(string title)

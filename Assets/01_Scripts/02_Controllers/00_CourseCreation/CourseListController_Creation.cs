@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class CourseListController_Creation : MonoBehaviour
@@ -7,6 +8,7 @@ public class CourseListController_Creation : MonoBehaviour
     [SerializeField] private CourseItemController_Creation _courseItemPrefab;
     [SerializeField] private Transform _courseItemContainer;
     [SerializeField] private CourseCreationController _courseCreationController;
+    [SerializeField] private TMP_InputField _nameInputField;
 
     private List<CourseItemController_Creation> _coursesList = new List<CourseItemController_Creation>();
 
@@ -19,6 +21,7 @@ public class CourseListController_Creation : MonoBehaviour
     {
         CourseSavedModel newCourse = new CourseSavedModel(GetNewCourseName());
         newCourse.Id = GetCourseId();
+        newCourse.CourseTitle = _nameInputField.text == string.Empty ? "new course" : _nameInputField.text;
         AddCourseToList(newCourse);
         _courseCreationController.Save();
     }
