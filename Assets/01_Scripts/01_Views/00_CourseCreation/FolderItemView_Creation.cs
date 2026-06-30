@@ -6,6 +6,8 @@ public class FolderItemView_Creation : MonoBehaviour
 {
     [SerializeField] private TMP_InputField _nameInputField;
     [SerializeField] private Image _background;
+    [SerializeField] private Color _defaultColor;
+    [SerializeField] private Color _selectedColor;
 
     public void SetName(string name)
     {
@@ -19,6 +21,6 @@ public class FolderItemView_Creation : MonoBehaviour
 
     public void SetSelected(bool seleceted)
     {
-        _background.color = seleceted ? Color.red : Color.white;
+        _background.color = seleceted ? _selectedColor : _defaultColor;
     }
 }

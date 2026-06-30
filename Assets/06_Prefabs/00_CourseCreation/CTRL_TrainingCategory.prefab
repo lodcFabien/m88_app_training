@@ -145,6 +145,7 @@ MonoBehaviour:
   _selectImage: {fileID: 2747971255900303104}
   _defaultColor: {r: 0.7490196, g: 0.8313726, b: 0.8352942, a: 1}
   _selectColor: {r: 0.19607843, g: 0.4627451, b: 0.45882353, a: 1}
+  _text: {fileID: 6315226282013685429}
 --- !u!114 &8411308634334324275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,8 +393,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Course
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0724974d955485f498e7e26769f2a200, type: 2}
-  m_sharedMaterial: {fileID: -7490216427898086963, guid: 0724974d955485f498e7e26769f2a200, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dbce36e943f5c694b95032ea6507d327, type: 2}
+  m_sharedMaterial: {fileID: 8651631674888535656, guid: dbce36e943f5c694b95032ea6507d327, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

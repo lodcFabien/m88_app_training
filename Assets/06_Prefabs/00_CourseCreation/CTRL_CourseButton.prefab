@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d28c53b8f07fc64408356a4f2d681886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CourseItemView
-  _backgroundImage: {fileID: 5179649985372951574}
+  _backgroundImage: {fileID: 4048159012640065193}
   _inputField: {fileID: 8824807077919518324}
   _normalColor: {r: 0.7411765, g: 0.8196079, b: 0.8235295, a: 1}
   _selectColor: {r: 0.20000002, g: 0.46274513, b: 0.45882356, a: 1}
@@ -420,8 +420,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0724974d955485f498e7e26769f2a200, type: 2}
-  m_sharedMaterial: {fileID: -7490216427898086963, guid: 0724974d955485f498e7e26769f2a200, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dbce36e943f5c694b95032ea6507d327, type: 2}
+  m_sharedMaterial: {fileID: 8651631674888535656, guid: dbce36e943f5c694b95032ea6507d327, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -453,7 +453,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 4096
+  m_VerticalAlignment: 8192
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -741,8 +741,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Course name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0724974d955485f498e7e26769f2a200, type: 2}
-  m_sharedMaterial: {fileID: -7490216427898086963, guid: 0724974d955485f498e7e26769f2a200, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dbce36e943f5c694b95032ea6507d327, type: 2}
+  m_sharedMaterial: {fileID: 8651631674888535656, guid: dbce36e943f5c694b95032ea6507d327, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -774,7 +774,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 4096
+  m_VerticalAlignment: 8192
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1

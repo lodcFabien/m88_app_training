@@ -1,11 +1,14 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FileExplorer_CategoryButtonView : MonoBehaviour
 {
-    [SerializeField] private GameObject _selectImage;
+    [SerializeField] private Image _background;
+    [SerializeField] private Color _defaultColor;
+    [SerializeField] private Color _selectedColor;
 
     public void SetSelected(bool selected)
     {
-        _selectImage.SetActive(selected);
+        _background.color = selected ? _selectedColor : _defaultColor;
     }
 }

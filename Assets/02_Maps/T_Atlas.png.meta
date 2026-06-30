@@ -509,7 +509,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: T_PdfIcon
+      name: T_PDFIcon
       rect:
         serializedVersion: 2
         x: 910
@@ -694,7 +694,7 @@ TextureImporter:
         height: 524
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 33, y: 29, z: 32, w: 32}
       customData: 
       outline: []
       physicsShape: []
@@ -797,8 +797,8 @@ TextureImporter:
       T_HorizontalLine: 1944546183
       T_Logo: 767785257
       T_MaximizeIcon: -1524369160
+      T_PDFIcon: -944246159
       T_PDF_Item: -354090120
-      T_PdfIcon: -944246159
       T_Play: 1970215803
       T_PresentationIcon: 1026459398
       T_Presentation_Item: -726876872

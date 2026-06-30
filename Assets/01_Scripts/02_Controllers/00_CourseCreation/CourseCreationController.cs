@@ -32,7 +32,7 @@ public class CourseCreationController : MonoBehaviour
     public void AddNewFolderOnButtonClick()
     {
         FolderItemController_Creation newFolder = AddNewFolder(_folderContainer);
-        newFolder.SetFolderName(_folderName.text == string.Empty ? "new folder":  _folderName.text);
+        newFolder.SetFolderName(_folderName.text == string.Empty ? "New Chapter":  _folderName.text);
         newFolder.ClickOnItem();
         Save();
     }

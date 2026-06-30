@@ -10,8 +10,6 @@ public class FileManagementView : MonoBehaviour
     {
         _canvasGroup.alpha = folder != null ? 1 :0;
         SetActive(folder != null);
-        _title.text = folder?.Title;
-
     }
 
     public void SetActive(bool active)

@@ -21,7 +21,7 @@ public class CourseListController_Creation : MonoBehaviour
     {
         CourseSavedModel newCourse = new CourseSavedModel(GetNewCourseName());
         newCourse.Id = GetCourseId();
-        newCourse.CourseTitle = _nameInputField.text == string.Empty ? "new course" : _nameInputField.text;
+        newCourse.CourseTitle = _nameInputField.text == string.Empty ? "New course" : _nameInputField.text;
         AddCourseToList(newCourse);
         _courseCreationController.Save();
     }

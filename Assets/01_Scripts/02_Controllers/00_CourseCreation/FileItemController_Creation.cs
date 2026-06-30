@@ -32,7 +32,7 @@ public class FileItemController_Creation : MonoBehaviour
     public void Init(string fileName)
     {
         FileInfo fileInfo = new FileInfo(fileName);
-        _view.SetName($"../{fileInfo.Name}");
+        _view.SetName($"{fileInfo.Name}");
         _fileName = fileName;
     }
 

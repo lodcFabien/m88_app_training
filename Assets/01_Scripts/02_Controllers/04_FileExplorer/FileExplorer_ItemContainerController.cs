@@ -41,7 +41,7 @@ public class FileExplorer_ItemContainerController : MonoBehaviour
             if (file.Extension == GetExtension())
             {
                 FileExplorer_FileItemController spawnedItem = Instantiate(_fileItemPrefab, _fileItemContainer);
-                spawnedItem.Init(file);
+                spawnedItem.Init(file, _fileType);
                 _fileItems.Add(spawnedItem);
                 spawnedItem.ClickEvent.AddListener(x => x.SwitchSelected());
             }
