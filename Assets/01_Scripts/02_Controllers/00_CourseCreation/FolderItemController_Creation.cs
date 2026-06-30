@@ -107,8 +107,7 @@ public class FolderItemController_Creation : MonoBehaviour
 
     public void MakeItemFromSave(FolderSavedModel folderModel)
     {
-        _view.SetName(folderModel.FolderName);
-
+        SetFolderName(folderModel.FolderName);
         for(int i=0 ; i<folderModel.SubFolders.Length ; i++)
         {
             AddSubFolder().MakeItemFromSave(folderModel.SubFolders[i]);
@@ -118,6 +117,11 @@ public class FolderItemController_Creation : MonoBehaviour
         {
             _files.Add(folderModel.Files[i]);
         }
+    }
+
+    public void SetFolderName(string name)
+    {
+        _view.SetName(name);
     }
 
     private void Update()

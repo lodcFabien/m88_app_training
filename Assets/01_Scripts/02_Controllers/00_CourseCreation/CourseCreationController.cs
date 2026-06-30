@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using static CourseSavedModel;
 using static Enums;
@@ -13,6 +14,7 @@ public class CourseCreationController : MonoBehaviour
     [SerializeField] private CourseCreationView _view;
     [SerializeField] private FileManagementController _fileManagementController;
     [SerializeField] private CourseTypesController _courseTypes;
+    [SerializeField] private TMP_InputField _folderName;
 
     [SerializeField] private RectTransform _draggableArea;
     public RectTransform DraggableArea => _draggableArea;
@@ -29,7 +31,9 @@ public class CourseCreationController : MonoBehaviour
 
     public void AddNewFolderOnButtonClick()
     {
-        AddNewFolder(_folderContainer).ClickOnItem();
+        FolderItemController_Creation newFolder = AddNewFolder(_folderContainer);
+        newFolder.SetFolderName(_folderName.text == string.Empty ? "new folder":  _folderName.text);
+        newFolder.ClickOnItem();
         Save();
     }
 
