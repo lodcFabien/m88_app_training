@@ -15,7 +15,7 @@ public class FileExplorer_FileItemView : MonoBehaviour
 
     public void SetTitle(string title)
     {
-        _title.text = title;
+        _title.text = title.Split('.')[0];
     }
 
     public void SetIcon(Sprite icon)

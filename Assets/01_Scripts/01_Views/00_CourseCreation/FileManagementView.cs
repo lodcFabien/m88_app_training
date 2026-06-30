@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class FileManagementView : MonoBehaviour
 {
-    [SerializeField] private TMP_Text _title;
     [SerializeField] private CanvasGroup _canvasGroup;
 
     public void Init(FolderItemController_Creation folder)

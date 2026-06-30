@@ -116,10 +116,10 @@ TextureImporter:
       name: T_VisualizationIcon
       rect:
         serializedVersion: 2
-        x: 68
-        y: 1762
-        width: 221
-        height: 221
+        x: 150
+        y: 74
+        width: 960
+        height: 961
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,10 +138,10 @@ TextureImporter:
       name: T_EditCoursesIcon
       rect:
         serializedVersion: 2
-        x: 389
-        y: 1862
-        width: 241
-        height: 116
+        x: 1545
+        y: 509
+        width: 1044
+        height: 503
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +160,10 @@ TextureImporter:
       name: T_QuizMakerIcon
       rect:
         serializedVersion: 2
-        x: 702
-        y: 1857
-        width: 140
-        height: 139
+        x: 2904
+        y: 489
+        width: 604
+        height: 598
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,10 +182,10 @@ TextureImporter:
       name: T_ReduceIcon
       rect:
         serializedVersion: 2
-        x: 927
-        y: 1864
-        width: 62
-        height: 8
+        x: 1853
+        y: 3726
+        width: 124
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,10 +204,10 @@ TextureImporter:
       name: T_MaximizeIcon
       rect:
         serializedVersion: 2
-        x: 1039
-        y: 1863
-        width: 46
-        height: 46
+        x: 2077
+        y: 3725
+        width: 94
+        height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +226,10 @@ TextureImporter:
       name: T_QuitIcon
       rect:
         serializedVersion: 2
-        x: 1134
-        y: 1863
-        width: 47
-        height: 47
+        x: 2267
+        y: 3726
+        width: 95
+        height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,10 +248,10 @@ TextureImporter:
       name: T_Presentation_Item
       rect:
         serializedVersion: 2
-        x: 1252
-        y: 1852
-        width: 77
-        height: 91
+        x: 2503
+        y: 3705
+        width: 156
+        height: 182
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,10 +270,10 @@ TextureImporter:
       name: T_PDF_Item
       rect:
         serializedVersion: 2
-        x: 1347
-        y: 1852
-        width: 77
-        height: 91
+        x: 2693
+        y: 3705
+        width: 156
+        height: 182
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,10 +292,10 @@ TextureImporter:
       name: T_Quiz_Item
       rect:
         serializedVersion: 2
-        x: 1443
-        y: 1852
-        width: 77
-        height: 91
+        x: 2886
+        y: 3704
+        width: 156
+        height: 182
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,10 +314,10 @@ TextureImporter:
       name: T_AddIcon
       rect:
         serializedVersion: 2
-        x: 85
-        y: 1629
-        width: 62
-        height: 63
+        x: 169
+        y: 3257
+        width: 124
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,10 +336,10 @@ TextureImporter:
       name: T_DeleteIcon
       rect:
         serializedVersion: 2
-        x: 194
-        y: 1628
-        width: 55
-        height: 65
+        x: 385
+        y: 3256
+        width: 114
+        height: 131
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,10 +358,10 @@ TextureImporter:
       name: T_DuplicateIcon
       rect:
         serializedVersion: 2
-        x: 295
-        y: 1629
-        width: 64
-        height: 63
+        x: 590
+        y: 3257
+        width: 129
+        height: 129
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,10 +380,10 @@ TextureImporter:
       name: T_QuizTimeline_Circle
       rect:
         serializedVersion: 2
-        x: 392
-        y: 1629
-        width: 63
-        height: 63
+        x: 784
+        y: 3258
+        width: 125
+        height: 125
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,10 +402,10 @@ TextureImporter:
       name: T_QuizTimeline_Disk
       rect:
         serializedVersion: 2
-        x: 491
-        y: 1643
-        width: 35
-        height: 35
+        x: 981
+        y: 3285
+        width: 72
+        height: 72
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -424,13 +424,13 @@ TextureImporter:
       name: T_VerticalLine
       rect:
         serializedVersion: 2
-        x: 573
-        y: 1597
-        width: 5
-        height: 133
+        x: 1145
+        y: 3194
+        width: 13
+        height: 266
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 5, z: 0, w: 4}
+      border: {x: 0, y: 8, z: 0, w: 8}
       customData: 
       outline: []
       physicsShape: []
@@ -446,10 +446,10 @@ TextureImporter:
       name: T_Expand
       rect:
         serializedVersion: 2
-        x: 628
-        y: 1630
-        width: 32
-        height: 61
+        x: 1255
+        y: 3259
+        width: 65
+        height: 123
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,10 +468,10 @@ TextureImporter:
       name: T_VideoIcon
       rect:
         serializedVersion: 2
-        x: 706
-        y: 1628
-        width: 65
-        height: 65
+        x: 1413
+        y: 3257
+        width: 130
+        height: 130
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -490,10 +490,10 @@ TextureImporter:
       name: T_PresentationIcon
       rect:
         serializedVersion: 2
-        x: 812
-        y: 1628
-        width: 65
-        height: 65
+        x: 1624
+        y: 3257
+        width: 130
+        height: 130
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,10 +512,10 @@ TextureImporter:
       name: T_PDFIcon
       rect:
         serializedVersion: 2
-        x: 910
-        y: 1628
-        width: 65
-        height: 65
+        x: 1821
+        y: 3257
+        width: 130
+        height: 130
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -534,10 +534,10 @@ TextureImporter:
       name: T_QuizIcon
       rect:
         serializedVersion: 2
-        x: 1005
-        y: 1628
-        width: 65
-        height: 65
+        x: 2010
+        y: 3257
+        width: 130
+        height: 130
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -556,10 +556,10 @@ TextureImporter:
       name: T_Play
       rect:
         serializedVersion: 2
-        x: 1116
-        y: 1630
-        width: 50
-        height: 60
+        x: 2229
+        y: 3261
+        width: 104
+        height: 118
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -578,10 +578,10 @@ TextureImporter:
       name: T_Volume
       rect:
         serializedVersion: 2
-        x: 1201
-        y: 1628
-        width: 77
-        height: 63
+        x: 2401
+        y: 3255
+        width: 156
+        height: 129
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -600,10 +600,10 @@ TextureImporter:
       name: T_Circle
       rect:
         serializedVersion: 2
-        x: 1330
-        y: 1629
-        width: 63
-        height: 63
+        x: 2658
+        y: 3255
+        width: 131
+        height: 130
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -622,13 +622,13 @@ TextureImporter:
       name: T_HorizontalLine
       rect:
         serializedVersion: 2
-        x: 1435
-        y: 1655
-        width: 140
-        height: 8
+        x: 2868
+        y: 3309
+        width: 282
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 0, z: 6, w: 0}
+      border: {x: 12, y: 0, z: 10, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -644,13 +644,13 @@ TextureImporter:
       name: T_Cartouche
       rect:
         serializedVersion: 2
-        x: 87
-        y: 1445
-        width: 242
-        height: 82
+        x: 174
+        y: 2890
+        width: 484
+        height: 165
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 38, y: 0, z: 38, w: 0}
+      border: {x: 78, y: 0, z: 78, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -666,13 +666,13 @@ TextureImporter:
       name: T_RoundedSquare
       rect:
         serializedVersion: 2
-        x: 103
-        y: 854
-        width: 515
-        height: 514
+        x: 205
+        y: 1705
+        width: 1032
+        height: 1034
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 29, y: 25, z: 28, w: 24}
+      border: {x: 49, y: 52, z: 47, w: 57}
       customData: 
       outline: []
       physicsShape: []
@@ -688,13 +688,13 @@ TextureImporter:
       name: T_RoundedFrame
       rect:
         serializedVersion: 2
-        x: 681
-        y: 849
-        width: 524
-        height: 524
+        x: 1361
+        y: 1697
+        width: 1050
+        height: 1049
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 33, y: 29, z: 32, w: 32}
+      border: {x: 65, y: 69, z: 71, w: 68}
       customData: 
       outline: []
       physicsShape: []
@@ -710,10 +710,10 @@ TextureImporter:
       name: T_Logo
       rect:
         serializedVersion: 2
-        x: 158
-        y: 668
-        width: 424
-        height: 86
+        x: 314
+        y: 1342
+        width: 851
+        height: 166
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -732,10 +732,10 @@ TextureImporter:
       name: T_Safran
       rect:
         serializedVersion: 2
-        x: 180
-        y: 579
-        width: 156
-        height: 35
+        x: 360
+        y: 1159
+        width: 315
+        height: 70
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -754,10 +754,10 @@ TextureImporter:
       name: T_VideoItem
       rect:
         serializedVersion: 2
-        x: 1532
-        y: 1852
-        width: 77
-        height: 91
+        x: 3062
+        y: 3704
+        width: 156
+        height: 182
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
