@@ -12,13 +12,13 @@ public class QuizAnswerController_Visualization : MonoBehaviour
     private bool _selected = false;
     public bool Selected => _selected;
 
-    private bool _correctCheckState = true;
+    private bool _checkState = true;
 
-    public void Init(AnswerSavedModel answerModel)
+    public void Init(AnswerSavedModel answerModel, char letter)
     {
-        SetCorrectCheckState(false);
+        _checkState = false;
         _answerModel = answerModel;
-        _view.SetAnswer(answerModel);
+        _view.SetAnswer(answerModel, letter);
         SetSelected(false);
     }
 
@@ -30,7 +30,7 @@ public class QuizAnswerController_Visualization : MonoBehaviour
 
     public void SwitchSelected()
     {
-        if (_correctCheckState)
+        if (_checkState)
         {
             return;
         }
@@ -38,10 +38,9 @@ public class QuizAnswerController_Visualization : MonoBehaviour
         SetSelected(!_selected);
     }
 
-    public void SetCorrectCheckState(bool correctCheckState)
+    public void SetCheckState()
     {
-        _correctCheckState = correctCheckState;
-        _correctCheckState = correctCheckState;
-        _view.SetCorrectVisibility(correctCheckState);
+        _checkState = true;
+        _view.SetCheckState(_answerModel.Correct, Selected);
     }
 }

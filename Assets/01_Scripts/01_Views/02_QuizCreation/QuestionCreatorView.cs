@@ -4,13 +4,7 @@ using UnityEngine;
 public class QuestionCreatorView : MonoBehaviour
 {
     [SerializeField] private CanvasGroup _canvasGroup;
-    [SerializeField] private TMP_Text _questionTitle;
     [SerializeField] private TMP_InputField _questionStatement;
-
-    public void SetQuestionTitle(string title)
-    {
-        _questionTitle.text = title;
-    }
 
     public void SetActive(bool active)
     {

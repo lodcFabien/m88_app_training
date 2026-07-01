@@ -114,7 +114,7 @@ namespace UnityEngine.UI.Extensions
 
             //Put _dragging object into the dragging area
             //_draggingObjectOriginalSize = gameObject.GetComponent<RectTransform>().rect.size;
-            _draggingObjectOriginalSize = new Vector2(gameObject.GetComponent<RectTransform>().rect.size.x,30);
+            _draggingObjectOriginalSize = new Vector2(gameObject.GetComponent<RectTransform>().rect.size.x,42);
             _draggingObjectLE = _draggingObject.GetComponent<LayoutElement>();
             _draggingObject.SetParent(_reorderableList.DraggableArea, true);
             _draggingObject.SetAsLastSibling();

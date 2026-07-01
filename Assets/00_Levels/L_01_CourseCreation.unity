@@ -1087,10 +1087,10 @@ RectTransform:
   - {fileID: 2142209529}
   m_Father: {fileID: 34719072}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.5000153, y: 0}
-  m_SizeDelta: {x: -37.000042, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0}
+  m_SizeDelta: {x: -40.00004, y: 42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &435439938
 GameObject:
@@ -3175,10 +3175,10 @@ RectTransform:
   - {fileID: 633711292}
   m_Father: {fileID: 1981357919}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.4999695, y: 0}
-  m_SizeDelta: {x: -34.999928, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -39.999996, y: 42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &781249519
 GameObject:
@@ -4493,10 +4493,10 @@ RectTransform:
   - {fileID: 1003765109}
   m_Father: {fileID: 104778559}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.6696, y: 1.3391}
-  m_SizeDelta: {x: 413, y: 40}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -40.000004, y: 42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1152687555
 GameObject:
@@ -6167,7 +6167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ScrollRect
   m_Content: {fileID: 435439939}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
@@ -7170,6 +7170,10 @@ PrefabInstance:
     - target: {fileID: 7720542049376866500, guid: 6ed9484ca53e9524cb48d8b95c5d86e5, type: 3}
       propertyPath: m_Name
       value: BTN_Videos
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927653843016167074, guid: 6ed9484ca53e9524cb48d8b95c5d86e5, type: 3}
+      propertyPath: _fileType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9224,6 +9228,10 @@ PrefabInstance:
     - target: {fileID: 237241898220283943, guid: d17e3a0cddcf44b46b9cfbb8cb1a38d7, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -18.499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2640465351238408536, guid: d17e3a0cddcf44b46b9cfbb8cb1a38d7, type: 3}
+      propertyPath: m_PreferredHeight
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 2932619721943486909, guid: d17e3a0cddcf44b46b9cfbb8cb1a38d7, type: 3}
       propertyPath: m_Name

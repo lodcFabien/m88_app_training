@@ -15,6 +15,7 @@ public class FileExplorer_FileItemController : MonoBehaviour
     public bool Selected => _selected;
 
     private FileInfo _fileInfo;
+    public FileInfo FileInfo => _fileInfo;
 
     private UnityEvent<FileExplorer_FileItemController> _clickEvent = new UnityEvent<FileExplorer_FileItemController> ();
     public UnityEvent<FileExplorer_FileItemController> ClickEvent => _clickEvent;

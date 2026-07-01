@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using static QuizSavedModel;
@@ -11,6 +12,7 @@ public class QuestionListController_Creation : MonoBehaviour
     [SerializeField] private QuestionItemController_Creation _questionPrefab;
     [SerializeField] private Transform _questionsContainer;
     [SerializeField] private QuestionCreatorController _questionCreator;
+    [SerializeField] private TMP_InputField _questionName;
 
     private List<QuestionItemController_Creation> _questions = new List<QuestionItemController_Creation>();
 
@@ -34,7 +36,6 @@ public class QuestionListController_Creation : MonoBehaviour
             return;
         }
 
-        _view.SetQuizTitle(quiz.QuizTitle);
 
         foreach(QuestionSavedModel question in quiz.Questions)
         {
@@ -45,6 +46,7 @@ public class QuestionListController_Creation : MonoBehaviour
     public void AddQuestionOnButtonClicked()
     {
         QuestionSavedModel model = new QuestionSavedModel();
+        model.Title = _questionName.text == string.Empty ? "New Question" : _questionName.text;
         AddQuestionItem(model).Click();
         ActionOnQuestionsEdited();
     }

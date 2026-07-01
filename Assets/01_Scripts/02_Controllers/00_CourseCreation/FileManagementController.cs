@@ -14,6 +14,7 @@ public class FileManagementController : MonoBehaviour
     private List<FileItemController_Creation> _fileItems = new List<FileItemController_Creation>(); 
 
     private FolderItemController_Creation _activeFolder;
+    public FolderItemController_Creation ActiveFolder => _activeFolder;
 
     public void SetActiveFolder(FolderItemController_Creation currentFolder)
     {
@@ -75,6 +76,7 @@ public class FileManagementController : MonoBehaviour
 
     public void AddNewFile(List<string> files)
     {
+        Clear();
         foreach (string file in files)
         {
             SpawnFileItem(file);

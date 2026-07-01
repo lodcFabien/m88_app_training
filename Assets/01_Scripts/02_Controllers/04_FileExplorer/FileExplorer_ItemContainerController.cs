@@ -3,6 +3,7 @@ using SkiaSharp;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 using static Enums;
 
@@ -59,7 +60,6 @@ public class FileExplorer_ItemContainerController : MonoBehaviour
             case FileType.Pdf: subPath = "01_PDFs";break;
             case FileType.Video: subPath = "02_Videos";break;
             case FileType.Quiz: subPath = "03_Quizzes";break;
-            case FileType.Image: subPath = "04_Images";break;
         }
         return _defaultPath + subPath;
     }
@@ -72,7 +72,6 @@ public class FileExplorer_ItemContainerController : MonoBehaviour
             case FileType.Pdf: return ".pdf";
             case FileType.Video: return ".mp4";
             case FileType.Quiz: return ".quiz";
-            case FileType.Image: return ".png";
         }
 
         return string.Empty;
@@ -96,5 +95,16 @@ public class FileExplorer_ItemContainerController : MonoBehaviour
         }
 
         return files;
+    }
+
+    public void SetSelectedFileOnOpen(List<FileInfo> fileInfos)
+    {
+        foreach (FileExplorer_FileItemController fileItem in _fileItems)
+        {
+            if(fileInfos.Any(x => x.Name == fileItem.FileInfo.Name))
+            {
+                fileItem.Click();
+            }
+        }
     }
 }

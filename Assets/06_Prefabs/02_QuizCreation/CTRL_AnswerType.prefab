@@ -66,10 +66,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CORRECT
+  m_text: Correct
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dbce36e943f5c694b95032ea6507d327, type: 2}
+  m_sharedMaterial: {fileID: 8651631674888535656, guid: dbce36e943f5c694b95032ea6507d327, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnswerTypeController
   _view: {fileID: 5921068639934325476}
-  _isCorrectAnswer: 0
+  _isCorrectAnswer: 1
 --- !u!114 &5921068639934325476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +244,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e67fbe7fe202a4cbe0b0f116df5782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnswerTypeView
-  _checkImage: {fileID: 5418891841169677185}
+  _checkImage: {fileID: 3997099001608970640}
+  _text: {fileID: 8270434418145410921}
+  _defaultColor: {r: 0.7490196, g: 0.8313726, b: 0.8352942, a: 1}
+  _selectColor: {r: 0.19607845, g: 0.4666667, b: 0.45882356, a: 1}
 --- !u!1 &3013408576657380334
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,15 +308,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.20392157, g: 0.45882353, b: 0.4509804, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3654716485926208810, guid: bba72dabc99b6834f85b68fb4f9e43cb, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: -711581462, guid: bba72dabc99b6834f85b68fb4f9e43cb, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -464,14 +467,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.20392159, g: 0.45882356, b: 0.45098042, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 587157103, guid: bba72dabc99b6834f85b68fb4f9e43cb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

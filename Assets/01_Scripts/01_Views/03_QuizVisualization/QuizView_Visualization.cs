@@ -1,11 +1,18 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuizView_Visualization : MonoBehaviour
 {
     [SerializeField] private TMP_Text _quizTitle;
     [SerializeField] private TMP_Text _question;
     [SerializeField] private TMP_Text _score;
+
+
+    [Header("Image")]
+    [SerializeField] private GameObject _imageContainer;
+    [SerializeField] private AspectRatioFitter _ratioFitter;
+    [SerializeField] private RawImage _image;
 
     public void SetQuizTitle(string quizTitle)
     {
@@ -17,8 +24,18 @@ public class QuizView_Visualization : MonoBehaviour
     {
         _question.text = question;
     }
-    public void SetScore(int score)
+
+    public void SetImage(Texture2D image)
     {
-        _score.text = score.ToString();
+        if (image != null)
+        {
+            _imageContainer.SetActive(true);
+            _ratioFitter.aspectRatio = (float)image.width / (float)image.height;
+            _image.texture = image;
+        }
+        else
+        {
+            _imageContainer.SetActive(false);
+        }
     }
 }

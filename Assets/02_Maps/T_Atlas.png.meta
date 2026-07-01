@@ -688,13 +688,13 @@ TextureImporter:
       name: T_RoundedFrame
       rect:
         serializedVersion: 2
-        x: 1361
+        x: 1360
         y: 1697
-        width: 1050
+        width: 1052
         height: 1049
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 65, y: 69, z: 71, w: 68}
+      border: {x: 66, y: 69, z: 72, w: 68}
       customData: 
       outline: []
       physicsShape: []
@@ -772,6 +772,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: T_ImportIcon
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 3464
+        width: 195
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b33321404c3744aa9423190f508a7e
+      internalID: 898373956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_RoundedFrame_Large
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 1684
+        width: 1076
+        height: 1076
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 82, y: 81, z: 80, w: 81}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a823130e21a334994702a6b44a49c1
+      internalID: 1052843957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -795,6 +839,7 @@ TextureImporter:
       T_Expand: -2041235876
       T_Frame: 3654716485926208810
       T_HorizontalLine: 1944546183
+      T_ImportIcon: 898373956
       T_Logo: 767785257
       T_MaximizeIcon: -1524369160
       T_PDFIcon: -944246159
@@ -810,6 +855,7 @@ TextureImporter:
       T_Quiz_Item: 1399659327
       T_ReduceIcon: 1280502306
       T_RoundedFrame: -883072294
+      T_RoundedFrame_Large: 1052843957
       T_RoundedSquare: 648953176
       T_Safran: -1533311493
       T_VerticalLine: 1357597845

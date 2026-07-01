@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ public class FileExplorer_MainController : MonoBehaviour
 {
     [SerializeField] private GameObject _activator;
     [SerializeField] private FileManagementController _fileManagement;
+
     [SerializeField] private List<FileExplorer_CategoryButtonController> _headerButtons = new List<FileExplorer_CategoryButtonController> ();
     [SerializeField] private List<FileExplorer_ItemContainerController> _containers = new List<FileExplorer_ItemContainerController> ();
 
@@ -26,6 +28,7 @@ public class FileExplorer_MainController : MonoBehaviour
     {
         _activator.SetActive(activated);
         ActionOnHeaderButtonClicked(_headerButtons.Find(x => x.FileType == Enums.FileType.PowerPoint));
+        SetSelectedFileOnActivate();
     }
 
     public void Import()
@@ -38,5 +41,23 @@ public class FileExplorer_MainController : MonoBehaviour
         }
 
         _fileManagement.AddNewFile(files);
+    }
+    
+    private void SetSelectedFileOnActivate()
+    {
+        if(_fileManagement.ActiveFolder == null)
+        {
+            return;
+        }
+
+        _containers.ForEach(x => x.Reset());
+
+        List<FileInfo> fileInfos = new List<FileInfo>();
+        foreach(string file in _fileManagement.ActiveFolder.Files)
+        {
+            FileInfo fileInfo = new FileInfo(file);
+            fileInfos.Add(fileInfo);
+        }
+        _containers.ForEach(x => x.SetSelectedFileOnOpen(fileInfos));
     }
 }

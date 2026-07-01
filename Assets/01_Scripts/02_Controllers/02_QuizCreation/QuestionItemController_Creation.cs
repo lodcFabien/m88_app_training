@@ -57,6 +57,7 @@ public class QuestionItemController_Creation : MonoBehaviour
     {
         _model.Question = model.Question;
         _model.Answers = model.Answers;
+        _model.ImagePath = model.ImagePath;
         QuestionEditedEvent.Invoke();
     }
 }

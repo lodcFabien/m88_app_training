@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class QuizListController_Creation : MonoBehaviour
@@ -9,6 +10,7 @@ public class QuizListController_Creation : MonoBehaviour
     [SerializeField] private ExcelImportController _excelImportController;
     [SerializeField] private QuizButtonController_Creation _quizButtonPrefab;
     [SerializeField] private QuestionListController_Creation _questionList;
+    [SerializeField] private TMP_InputField _quizName;
 
     private List<QuizButtonController_Creation> _quizButtons = new List<QuizButtonController_Creation>();
 
@@ -55,6 +57,7 @@ public class QuizListController_Creation : MonoBehaviour
     public void AddQuizzOnClick()
     {
         QuizSavedModel model = new QuizSavedModel();
+        model.QuizTitle = _quizName.text == string.Empty ? "New quiz" : _quizName.text;
         AddQuizToList(model);
     }
 

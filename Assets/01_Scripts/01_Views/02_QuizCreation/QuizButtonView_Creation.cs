@@ -6,6 +6,8 @@ public class QuizButtonView_Creation : MonoBehaviour
 {
     [SerializeField] private TMP_InputField _title;
     [SerializeField] private Image _backgroundImage;
+    [SerializeField] private Color _defaultColor;
+    [SerializeField] private Color _selectedColor;
 
     public void SetTitle(string title)
     {
@@ -19,6 +21,6 @@ public class QuizButtonView_Creation : MonoBehaviour
 
     public void SetSelected(bool selected)
     {
-        _backgroundImage.color = selected ? Color.red : Color.white;
+        _backgroundImage.color = selected ? _selectedColor : _defaultColor;
     }
 }

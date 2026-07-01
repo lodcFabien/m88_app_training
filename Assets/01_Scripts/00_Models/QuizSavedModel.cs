@@ -21,12 +21,14 @@ public class QuizSavedModel
         public string Title;
         public string Question;
         public AnswerSavedModel[] Answers;
+        public string ImagePath;
 
         public QuestionSavedModel()
         {
             Title = string.Empty;
             Question = string.Empty;
             Answers = new AnswerSavedModel[0];
+            ImagePath = string.Empty;
         }
     }
 
